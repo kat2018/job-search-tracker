@@ -2,6 +2,13 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+const dotenv = require("dotenv");
+
+dotenv.config();
+
+// Mongoose Setup
+const mongoose = require("mongoose");
+mongoose.connect(process.env.MONGODB_URI);
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
@@ -16,5 +23,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+
 
 module.exports = app;
