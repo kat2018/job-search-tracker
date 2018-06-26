@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema
-const JobSearchApplicationTracker = new Schema({
+const JobTrackerCardSchema = new Schema({
   companyName: {
     type: String,
     default: "Company Name"
@@ -22,6 +22,12 @@ const JobSearchApplicationTracker = new Schema({
   }, 
   userComments: {
       type: String,
-      default: "How did it go? Your comments here"
+      default: "Comments..."
   }
-});
+})
+
+const JobTrackerCardModel = mongoose.model('JobTrackerCard', JobTrackerCardSchema)
+
+module.exports = {
+    JobTrackerCardModel
+}
