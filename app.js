@@ -18,6 +18,7 @@ db.on("connected", () => {
 db.on('error', console.error.bind(console, 'connection error:'));
 
 const usersRouter = require('./routes/users');
+const cardRouter = require('./routes/card_routes')
 
 
 app.use(logger('dev'));
@@ -35,5 +36,6 @@ app.get('/', (req, res) => {
     res.sendFile(__dirname + '/client/build/index.html')
 })
 
+app.use('/jobseekerProfile', cardRouter)
 
 module.exports = app;
