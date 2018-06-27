@@ -26,8 +26,17 @@ const JobTrackerCardSchema = new Schema({
   }
 })
 
+const JobSeekerSchema = new Schema({
+    userName: String,
+    jobSeekerCards: [JobTrackerCardSchema]
+})
+
+const JobSeekerModel = mongoose.model("User", JobSeekerSchema);
+
 const JobTrackerCardModel = mongoose.model('JobTrackerCard', JobTrackerCardSchema)
 
+
 module.exports = {
-    JobTrackerCardModel
+    JobTrackerCardModel, 
+    JobSeekerModel
 }
