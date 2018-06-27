@@ -1,9 +1,11 @@
-var express = require('express');
-var path = require('path');
-var cookieParser = require('cookie-parser');
-var logger = require('morgan');
+const express = require('express');
+const path = require('path');
+const cookieParser = require('cookie-parser');
+const logger = require('morgan');
 const dotenv = require("dotenv");
 dotenv.config();
+const app = express();
+
 
 // Mongoose Setup
 const mongoose = require("mongoose");
@@ -15,9 +17,8 @@ db.on("connected", () => {
 });
 db.on('error', console.error.bind(console, 'connection error:'));
 
-var usersRouter = require('./routes/users');
+const usersRouter = require('./routes/users');
 
-var app = express();
 
 app.use(logger('dev'));
 app.use(express.json());

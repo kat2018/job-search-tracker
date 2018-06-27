@@ -2,6 +2,7 @@
   "name": "job-search-tracker",
   "version": "0.0.0",
   "private": true,
+  "main": "app.js",
   "scripts": {
     "start": "node bin/www",
     "dev": "concurrently \"nodemon bin/www\" \"cd ./client  && npm start \" ",

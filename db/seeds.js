@@ -28,7 +28,8 @@ const saved = async () => {
     });
 
     const jobSeeker = new JobSeekerModel({
-        jobSeeker: [google, facebook]
+        userName: 'Daisy Duck',
+        jobSeekerCards: [google, facebook]
     })
 
     await jobSeeker.save()
