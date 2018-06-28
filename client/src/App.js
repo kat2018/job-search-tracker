@@ -1,21 +1,34 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import logo from './logo.svg'
+import './App.css'
+import { Link, Switch, BrowserRouter as Router, Route } from "react-router-dom"
+import axios from 'axios'
+import HomePage from './components/HomePage'
+import JobCardsPage from './components/JobCardsPage'
+import LogInPage from './components/LogInPage'
 
 class App extends Component {
+  state = {
+    jobSeeker: []
+  }
+
   render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
+    return <Router>
+        <div>
+          <nav>
+            <Link to="/"> Home </Link>
+            <h1>Page Title</h1>
+            <input type="text" placeholder="Search..." />
+            <Link to="/users">User</Link>
+          </nav>
+          <Switch>
+            <Route exact path="/" component={HomePage} />
+            <Route path="/login" render={LogInPage} />
+            <Route path="/user/:userId" component={JobCardsPage} />
+          </Switch>
+        </div>
+      </Router>;
   }
 }
 
-export default App;
+export default App
