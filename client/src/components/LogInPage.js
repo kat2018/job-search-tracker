@@ -1,15 +1,15 @@
 import React, { Component } from 'react'
-import { Redirect } from "react-router-dom"
-import { axios } from "axios"
+import { Link } from "react-router-dom"
+import axios from "axios"
 
 class LogInPage extends Component {
     state = {
-        users: []
+        userName: ''
     }
 
     getUserProfile = () => {
-        axios.get('localhost:3001/api/users').then(res => {
-            this.setState({users: res.data})
+        axios.get('localhost:3001/api/userName').then(res => {
+            this.setState({userName: res.data})
         })
     }
 
@@ -17,10 +17,10 @@ class LogInPage extends Component {
         return (
             <div>
                 <h1>Job Search Tracker</h1>
-                <img src="#" alt="user profile image"/>
+                <img src="#" alt="user profile"/>
                 <h3>
-                    Welcome {this.state.users.map(user => {
-                    return(<Link to={`/user/${jobSeeker._id}`}> {user.jobSeeker} </Link>  )
+                    Welcome {this.props.users.map((user) => {
+                    return(<Link key={user._id} to={`/user/${user._id}`}> {user.jobSeeker} </Link>  )
                 })}
                 </h3>
                 <button type="submit">Enter</button>
