@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import logo from './logo.svg'
 import './App.css'
 import { Link, Switch, BrowserRouter as Router, Route } from "react-router-dom"
 import axios from 'axios'
@@ -13,7 +12,8 @@ class App extends Component {
   }
 
   render() {
-    return <Router>
+    return (
+      <Router>
         <div>
           <nav>
             <Link to="/"> Home </Link>
@@ -27,7 +27,8 @@ class App extends Component {
             <Route path="/user/:userId" component={JobCardsPage} />
           </Switch>
         </div>
-      </Router>;
+      </Router>
+    )
   }
 }
 
