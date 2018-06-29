@@ -1,15 +1,14 @@
 import React, { Component } from 'react'
 import './App.css'
 import { Link, Switch, BrowserRouter as Router, Route } from "react-router-dom"
-import axios from 'axios'
 import HomePage from './components/HomePage'
 import JobCardsPage from './components/JobCardsPage'
 import LogInPage from './components/LogInPage'
 
 class App extends Component {
-  state = {
-    jobSeeker: []
-  }
+  // state = {
+  //   jobSeeker: []
+  // }
 
   render() {
     return (
