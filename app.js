@@ -32,7 +32,6 @@ app.use(express.static(__dirname + "/client/build/"));
 app.use('/users', usersRouter);
 
 app.get('/', (req, res) => {
-  console.log('I am rendering correctly')
     res.sendFile(__dirname + '/client/build/index.html')
 })
 
