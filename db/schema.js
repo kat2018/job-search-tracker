@@ -3,11 +3,11 @@ const Schema = mongoose.Schema
 const JobTrackerCardSchema = new Schema({
   companyName: {
     type: String,
-    default: "Company Name"
+    default: "New Company Name"
   },
   contactName: {
     type: String,
-    default: "Contact Name"
+    default: "New Contact Name"
   },
   userRatingOfContactName: {
     type: Boolean
@@ -18,11 +18,11 @@ const JobTrackerCardSchema = new Schema({
   },
   jobTitle: {
       type: String,
-      default: "Job Title"
+      default: "New Job Title"
   }, 
   userComments: {
       type: String,
-      default: "Comments..."
+      default: "New Comment..."
   }
 })
 
