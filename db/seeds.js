@@ -13,7 +13,7 @@ const saved = async () => {
         companyName: "Google",
         contactName: "Jane Doe",
         userRatingOfContactName: "True",
-        dateSubmitted: (new Date),
+        dateSubmitted: new Date(06 / 15 / 2018),
         jobTitle: "Junior Developer",
         userComments: "Had a great phone interview"
     })
@@ -22,7 +22,7 @@ const saved = async () => {
       companyName: "Facebook",
       contactName: "Craby Patty",
       userRatingOfContactName: "True",
-      dateSubmitted: new Date(),
+      dateSubmitted: new Date(06/29/2018),
       jobTitle: "Junior Developer",
       userComments: "Connected via LinkedIn"
     });

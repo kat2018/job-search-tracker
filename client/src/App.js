@@ -23,13 +23,14 @@ class App extends Component {
     return (
       <Router>
         <div>
-          {/* <nav>
-            <Link to="/"> Home </Link>
-            <h1>Page Title</h1>
-            <input type="text" placeholder="Search..." />
-            <Link to="/users">User</Link>
-          </nav> */}
+          
           <Switch>
+            {/* <nav>
+              <Link to="/"> Home </Link>
+              <h1>Page Title</h1>
+              <input type="text" placeholder="Search..." />
+              <Link to="/users">User</Link>
+            </nav> */}
             <Route exact path="/" component={HomePage} />
             <Route path="/login" render={LogInPage} />
             <Route path="/user/:userId" component={JobCardsPage} />
