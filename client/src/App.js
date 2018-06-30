@@ -3,6 +3,11 @@ import './App.css'
 import { Link, Switch, BrowserRouter as Router, Route } from "react-router-dom"
 import axios from "axios"
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap'
+import IoAndroidSearch from "react-icons/lib/io/android-search"
+import IoHeart from "react-icons/lib/io/heart"
+import IoAndroidMoreVertical from "react-icons/lib/io/android-more-vertical"
+
+
 import { Button } from "reactstrap";
 import HomePage from './components/HomePage'
 import JobCardsPage from './components/JobCardsPage'
@@ -41,10 +46,13 @@ class App extends Component {
         return <div>
             <Navbar color="faded" light>
               <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
-
+                
               <NavbarBrand href="/" className="mr-auto">
                 Job Search Tracker
               </NavbarBrand>
+                <NavLink href="/search/"> <IoAndroidSearch /> </NavLink>
+                <NavLink href="/favorites/"> <IoHeart /> </NavLink>
+                <NavLink href="/more/"> <IoAndroidMoreVertical /> </NavLink>
               <Collapse isOpen={!this.state.collapsed} navbar>
                 <Nav navbar>
                   <NavItem>
@@ -67,31 +75,5 @@ class App extends Component {
             </Navbar>
           </div>
     }
-
-    
-    
-    
-    
-    // {
-    //     return (
-    //         <Router>
-    //             <div>
-
-    //                 <Switch>
-    //                     <nav>
-    //                         <Link to="/"> Home </Link>
-    //                         <h1>Page Title</h1>
-    //                         <input type="text" placeholder="Search..." />
-    //                         <Link to="/users">User</Link>
-    //                     </nav>
-    //                     <Route exact path="/" component={HomePage} />
-    //                     <Route path="/login" render={LogInPage} />
-    //                     <Route path="/user/:userId" component={JobCardsPage} />
-    //                 </Switch>
-    //             </div>
-    //         </Router>
-    //     )
-    // }
 }
-
 export default App
