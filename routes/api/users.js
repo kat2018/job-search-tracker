@@ -1,5 +1,5 @@
 const express = require('express')
-const { JobSeekerModel } = require('../db/schema')
+const { JobSeekerModel } = require('../../db/Schema')
 const router = express.Router()
 
 /* GET users listing. */

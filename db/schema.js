@@ -17,12 +17,12 @@ const JobTrackerCardSchema = new Schema({
     default: Date.now
   },
   jobTitle: {
-      type: String,
-      default: "New Job Title"
+    type: String,
+    default: "New Job Title"
   }, 
   userComments: {
-      type: String,
-      default: "New Comment..."
+    type: String,
+    default: "New Comment..."
   }
 })
 

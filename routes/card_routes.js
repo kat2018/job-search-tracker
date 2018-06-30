@@ -1,6 +1,6 @@
 const express = require('express')
 const router = express.Router();
-const { JobSeekerModel } = require("../db/schema");
+const { JobSeekerModel } = require("../db/Schema");
 
 router.get('/', function (req, res, next) {
     JobSeekerModel.find().then((jobSeeker) => {

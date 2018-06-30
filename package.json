@@ -2,6 +2,9 @@
   "name": "job-search-tracker",
   "version": "0.0.0",
   "private": true,
+  "engines": {
+    "node": "8.11.3"
+  },
   "main": "app.js",
   "scripts": {
     "start": "node bin/www",
@@ -9,9 +12,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "postinstall": "cd client && npm install && npm run build"
   },
-  "engines": {
-    "node": "8.11.3"
-  },
+  
   
   "dependencies": {
     "concurrently": "^3.6.0",
