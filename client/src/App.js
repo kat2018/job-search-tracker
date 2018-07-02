@@ -71,7 +71,7 @@ class App extends Component {
                 </Nav>
               </Collapse>
             </Navbar>
-            <IndividualJobCardPage/>
+            
           </div>
     }
 }

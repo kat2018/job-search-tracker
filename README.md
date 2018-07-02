@@ -23,9 +23,9 @@ Server Side:
 - Mongoose
 - Dependencies: 
     - Cookie Parser
-    Debub
-    Dotenv
-    Morgan
+    - Debub
+    - Dotenv
+    - Morgan
 
 Client Side: 
 - ReactJS
