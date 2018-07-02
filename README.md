@@ -10,9 +10,13 @@ The goal of this app is to allow job seekers to keep track of their job applicat
 
 [ERD Direct Link](https://www.lucidchart.com/invitations/accept/f8707fe0-9e69-401b-a144-5700962a1b7d)
 
+ERD Preview
+![alt text](https://github.com/kat2018/job-search-tracker/blob/master/images/Screen%20Shot%202018-07-02%20at%201.47.50%20PM.png)
 
 [Wireframe Direct Link (requires Figma Account)](https://www.figma.com/file/Goh7nxrnODVrRUqNm9hLUFUI/Job-Search-Tracker-Wireframe)
 
+Preview Wireframe
+![alt text](https://github.com/kat2018/job-search-tracker/blob/master/images/Screen%20Shot%202018-07-02%20at%201.47.59%20PM.png)
 
 ### Technologies used: 
 

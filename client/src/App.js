@@ -8,11 +8,6 @@ import IoHeart from "react-icons/lib/io/heart"
 import IoAndroidMoreVertical from "react-icons/lib/io/android-more-vertical"
 import IndividualJobCardPage from "./components/IndividualJobCardPage"
 
-
-
-
-
-
 class App extends Component {
     constructor(props) {
         super(props);
