@@ -32,8 +32,9 @@ app.get('/', (req, res) => {
 })
 
 //Use Routes
-// app.use('/api/cards', cards)
-// app.use('/api/users', usersRouter)
-// app.use("/jobseekerProfile", cardRouter)
+app.use('/', cardRouter)
+app.use('/api/cards', cards)
+app.use('/api/users', usersRouter)
+
 
 module.exports = app

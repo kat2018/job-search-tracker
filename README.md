@@ -4,7 +4,7 @@ Welcome to Job Search Tracker MERN project by by Katia Eidson.
 
 The goal of this app is to allow job seekers to keep track of their job applications when looking for a job
 
-[Deployed Project on Heroku](git.heroku.com/job-search-tracker-app.git)
+[Deployed Project on Heroku](https://job-search-tracker-app.herokuapp.com/)
 
 [Trello](https://trello.com/b/XKZ666BR/job-search-tracker)
 
