@@ -6,6 +6,7 @@ import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } f
 import IoAndroidSearch from "react-icons/lib/io/android-search"
 import IoHeart from "react-icons/lib/io/heart"
 import IoAndroidMoreVertical from "react-icons/lib/io/android-more-vertical"
+import IndividualJobCardPage from "./components/IndividualJobCardPage"
 
 
 
@@ -70,6 +71,7 @@ class App extends Component {
                 </Nav>
               </Collapse>
             </Navbar>
+            <IndividualJobCardPage/>
           </div>
     }
 }
