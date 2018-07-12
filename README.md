@@ -45,11 +45,11 @@ Client Side:
 
 ### The approach was taken: 
 
-The approach taken during this project was focused on creating the backend first. Using a two model, create a CRUD with RESTful foute. Then I created the client side using ReactJS. The app is stiled using Bootstrap and Reactstrap. 
+The approach taken during this project was focused on creating the backend first. Using a two model, create a CRUD with RESTful foute. Then I created the client side using ReactJS. The app was styled using Bootstrap and Reactstrap. 
 
 ### Unsolved problems: 
 
-The App is not finished. It needs CRUD and also finishing the routes and stile the components
+The App is not finished. It needs CRUD and also finishing the routes and style the components
 
 ### Notes to self: 
 
